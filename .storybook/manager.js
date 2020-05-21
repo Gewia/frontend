@@ -1,7 +1,7 @@
 import {addons} from '@storybook/addons';
 
-import eeduTheme from './e-eduTheme'
+import eeduTheme from './gewiaTheme'
 
 addons.setConfig({
-    theme: eeduTheme,
+    theme: gewiaTheme,
 });
