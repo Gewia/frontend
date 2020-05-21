@@ -78,4 +78,13 @@
       margin-left: 2rem;
     }
   }
+
+  .git {
+    bottom: 2.69rem;
+    position: absolute;
+    
+    p {
+      color: $color-warmGrey;
+    }
+  }
 }
