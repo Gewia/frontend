@@ -29,10 +29,10 @@
         "retypedPasswordLabel": "Passwort bestätigen"
       },
       "label": "Register",
+      "register": "REGISTRIEREN",
       "student": "Schüler",
       "teacher": "Lehrer",
-      "termsText": "Ich habe die <a href=\"/imprint\">AGB</a> und die <a href=\"/privacy\">Datenschutzbestimmungen</a> gelesen und akzeptiert.",
-      "register": "REGISTRIEREN"
+      "termsText": "Ich habe die <a href=\"/imprint\">AGB</a> und die <a href=\"/privacy\">Datenschutzbestimmungen</a> gelesen und akzeptiert."
     },
     "sidebar": {
       "home": "Startseite",
@@ -129,10 +129,15 @@
       "curentPassword": "Altes Passwort",
       "deleteAccount": "Account löschen",
       "email": "Email",
+      "git": {
+        "date": "Datum:",
+        "hash": "Hash:",
+        "version": "Version:"
+      },
       "language": "Sprache",
       "languages": {
-        "en": "Englisch",
-        "de": "Deutsch"
+        "de": "Deutsch",
+        "en": "Englisch"
       },
       "newPassword": "Neues Passwort",
       "password": "Passwort",

@@ -8,14 +8,15 @@ import Button from '../../components/ui/button/Button';
 import ComboBox from '../../components/ui/ComboBox/ComboBox';
 import SettingsStore from '../../store/SettingsStore';
 import Confirmation from '../../components/Settings/Confirmation/Confirmation';
+import { version } from '../../../package.json';
 
 const settingsStore = new SettingsStore();
 
 @observer
 class Settings extends Component {
     languages = {
-        en: t.t('page.settings.languages.en', 'English'),
         de: t.t('page.settings.languages.de', 'German'),
+        en: t.t('page.settings.languages.en', 'English'),
     };
 
     componentDidMount() {
@@ -152,6 +153,20 @@ class Settings extends Component {
                                     settingsStore.showConfirmation();
                                 }}
                             />
+                        </div>
+                    </div>
+                    <div className="git">
+                        <div className="flex-row-box">
+                            <p>{t.t('page.settings.git.version', 'Version:')}</p>
+                            <p style={{ marginLeft: '0.4rem' }}>Alpha {version}</p>
+                        </div>
+                        <div className="flex-row-box">
+                            <p>{t.t('page.settings.git.hash', 'Hash:')}</p>
+                            <p style={{ marginLeft: '0.4rem' }}>{process.env.REACT_APP_GIT_SHA}</p>
+                        </div>
+                        <div className="flex-row-box">
+                            <p>{t.t('page.settings.git.date', 'Date:')}</p>
+                            <p style={{ marginLeft: '0.4rem' }}>{process.env.REACT_APP_GIT_DATE}</p>
                         </div>
                     </div>
                     <div className="actions flex-row-box">

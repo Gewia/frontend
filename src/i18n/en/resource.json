@@ -29,10 +29,10 @@
         "retypedPasswordLabel": "Retype Password"
       },
       "label": "Register",
+      "register": "REGISTER",
       "student": "student",
       "teacher": "teacher",
-      "termsText": "I have read the <a href=\"/imprint\">GTC</a> and the <a href=\"/privacy\">privacy policy</a> and accepted both.",
-      "register": "REGISTER"
+      "termsText": "I have read the <a href=\"/imprint\">GTC</a> and the <a href=\"/privacy\">privacy policy</a> and accepted both."
     },
     "sidebar": {
       "home": "Home",
@@ -129,10 +129,15 @@
       "curentPassword": "Current Password",
       "deleteAccount": "Delete Account",
       "email": "Email",
+      "git": {
+        "date": "Date:",
+        "hash": "Hash:",
+        "version": "Version:"
+      },
       "language": "Language",
       "languages": {
-        "en": "English",
-        "de": "German"
+        "de": "German",
+        "en": "English"
       },
       "newPassword": "New Password",
       "password": "Password",
