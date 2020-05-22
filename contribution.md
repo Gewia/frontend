@@ -1,4 +1,4 @@
-# E-Edu Frontend Conventions
+# Gewia Frontend Conventions
 
 # Coding Style
 - In general our variables and comments are in english.

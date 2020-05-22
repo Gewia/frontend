@@ -11,7 +11,7 @@ class Credits extends Component {
                     </div>
                     <div className="credits">
                         <div className="featuretext">
-                            <h1 className="heading">E-Edu</h1>
+                            <h1 className="heading">Gewia</h1>
                             <p className="communityproject">
                                 Ein Community Projekt der
                                 <br />
