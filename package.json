@@ -26,7 +26,9 @@
   },
   "scripts": {
     "start": "REACT_APP_GIT_SHA=`git rev-parse --short HEAD` REACT_APP_GIT_DATE=`git log -1 --format=%cd` react-scripts start",
+    "start-win": "set REACT_APP_GIT_SHA=`git rev-parse --short HEAD` && set REACT_APP_GIT_DATE=`git log -1 --format=%cd` && react-scripts start",
     "build": "REACT_APP_GIT_SHA=`git rev-parse --short HEAD` REACT_APP_GIT_DATE=`git log -1 --format=%cd` react-scripts build",
+    "build-win": "set REACT_APP_GIT_SHA=`git rev-parse --short HEAD` && set REACT_APP_GIT_DATE=`git log -1 --format=%cd` && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -c .storybook watch-css -s public",
