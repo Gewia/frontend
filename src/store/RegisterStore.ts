@@ -7,6 +7,8 @@ class RegisterStore {
     @observable isGtcAccepted = false;
     @observable accountType: 'teacher' | 'student' | 'unset' = 'unset';
     @observable teacherToken = '';
+    @observable errorText: string = '';
+    @observable valid = false;
 
     @action setEmail(value: string) {
         this.email = value;
@@ -25,6 +27,15 @@ class RegisterStore {
     }
     @action setTeacherToken(value: string) {
         this.teacherToken = value;
+    }
+    @action setErrorText(value: string) {
+        this.errorText = value;
+    }
+    @action clearErrorText() {
+        this.errorText = '';
+    }
+    @action validate() {
+        this.valid = true;
     }
 }
 

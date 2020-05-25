@@ -23,6 +23,7 @@
       "date": "Reached at"
     },
     "register": {
+      "createAccount": "create Account",
       "inputs": {
         "emailLabel": "E-Mail",
         "passwordLabel": "Password",
@@ -32,7 +33,17 @@
       "register": "REGISTER",
       "student": "student",
       "teacher": "teacher",
-      "termsText": "I have read the <a href=\"/imprint\">GTC</a> and the <a href=\"/privacy\">privacy policy</a> and accepted both."
+      "teacherToken": "Teacher Token",
+      "termsText": "I have read the <a href=\"/imprint\">GTC</a> and the <a href=\"/privacy\">privacy policy</a> and accepted both.",
+      "validation": {
+        "GTCnotAccepted": "Please accept the GTC",
+        "differentPasswords": "The passwords do not match",
+        "invalidEmail": "Please enter a valid email",
+        "invalidPassword": "Please enter a valid password",
+        "invalidToken": "Please enter a valid teacher token",
+        "noAccountSelected": "Please select an account type",
+        "success": "Registration successful.\nPlease check your email and verify your account"
+      }
     },
     "sidebar": {
       "home": "Home",
