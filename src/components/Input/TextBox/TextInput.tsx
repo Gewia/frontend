@@ -8,7 +8,7 @@ interface TextInputProps {
     shadow?: string;
     className?: string;
     rows?: number;
-    type?: 'password';
+    type?: 'password' | 'email' | 'search' | 'text' | 'date' | 'url';
     style?: React.CSSProperties;
     onClick?: any;
     value?: string;
@@ -69,7 +69,7 @@ class TextInput extends React.Component<TextInputProps> {
                     onChange={onChange}
                     onClick={onClick}
                     style={style}
-                    type={type}
+                    type={type || 'text'}
                     value={value}
                     disabled={disabled}
                     pattern={pattern}

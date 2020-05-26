@@ -21,6 +21,7 @@ class Settings extends Component {
 
     componentDidMount() {
         document.addEventListener('keydown', this.handleKeyPress);
+        settingsStore.setSelectedLanguage(this.languages[localStorage.getItem('language')]);
     }
 
     // TODO: remove this because it'll be deprecated

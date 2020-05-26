@@ -23,16 +23,27 @@
       "date": "Erreicht am"
     },
     "register": {
+      "createAccount": "Account erstellen",
       "inputs": {
         "emailLabel": "E-Mail",
         "passwordLabel": "Passwort",
         "retypedPasswordLabel": "Passwort bestätigen"
       },
-      "label": "Register",
+      "label": "Registrieren",
       "register": "REGISTRIEREN",
       "student": "Schüler",
       "teacher": "Lehrer",
-      "termsText": "Ich habe die <a href=\"/imprint\">AGB</a> und die <a href=\"/privacy\">Datenschutzbestimmungen</a> gelesen und akzeptiert."
+      "teacherToken": "Lehrer Token",
+      "termsText": "Ich habe die <a href=\"/imprint\">AGB</a> und die <a href=\"/privacy\">Datenschutzbestimmungen</a> gelesen und akzeptiert.",
+      "validation": {
+        "GTCnotAccepted": "Bitte akzeptiere die AGB",
+        "differentPasswords": "Die Passwörter stimmen nicht überein",
+        "invalidEmail": "Bitte eine gültige Email eingeben",
+        "invalidPassword": "Bitte ein gültiges Passwort eingeben",
+        "invalidToken": "Bitte einen gültigen Lehrer Token eingeben",
+        "noAccountSelected": "Bitte einen Accounttyp auswählen",
+        "success": "Registrierung erfolgreich.\nBitte überprüfe deine Email und verifiziere deinen Account"
+      }
     },
     "sidebar": {
       "home": "Startseite",
