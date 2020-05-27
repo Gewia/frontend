@@ -5,7 +5,7 @@
     "every weekend"
   ],
   "baseBranches": [
-    "experimental"
+    "dev"
   ],
   "labels": [
     "renovate"
