@@ -1,7 +1,7 @@
 @import './src/css/styles';
 
 .register {
-  height: 31rem;
+  height: 35rem;
   width: 35rem;
 
   .header {
@@ -18,6 +18,21 @@
   .register-content {
     margin-left: 10%;
     width: 80%;
+
+    .text {
+      margin-top: 0.8rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    .error-text {
+      color: $color-red;
+    }
+
+    .success-text {
+      color: $color-green;
+    }
+
 
     .inputs .text-input {
       margin-top: 1rem;
@@ -43,8 +58,9 @@
 
     .submit-region {
       align-items: flex-end;
+      bottom: 1.5rem;
       justify-content: space-around;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       width: 100%;
     }
   }
