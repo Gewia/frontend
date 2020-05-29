@@ -1,181 +1,75 @@
 @import './src/css/styles';
 
-.login-component {
-  /*
-    * white bachgroundcanvas
-    */
-  .box {
-    background: #fff;
-    border-radius: 0.267rem;
-    box-shadow: 0 0 0.667rem #888;
-    color: #003;
-    height: 35vh;
-    padding: 0;
-    text-align: center;
-    width: 50vw;
+.login {
+  height: 35rem;
+  width: 35rem;
 
-    /*field that displays the text and all buttons and input-fields of the login*/
-    .box-content {
-      margin-top: -10%;
+  .header {
+    margin-left: 10%;
+    margin-top: 1rem;
+    width: 80%;
+
+    span {
+      color: $color-bluegrey;
+      font-size: 4rem;
+    }
+  }
+
+  .login-content {
+    margin-left: 10%;
+    width: 80%;
+
+    .text {
+      margin-top: 0.8rem;
+      text-align: center;
+      width: 100%;
     }
 
-    /*sets size and form of the input-boxes for password and email*/
-    .input-box {
-      border: 0.067rem solid #0b132b;
-      border-radius: 0.4rem;
-      margin: 0.667rem auto;
-      outline: none;
-      padding: 0.267rem;
-      width: 90%;
+    .error-text {
+      color: $color-red;
+    }
 
-      /*sets size of the actual inputfields in the input-boxes*/
-      input {
-        background: transparent;
-        outline: none;
-        width: 100%;
+    .success-text {
+      color: $color-green;
+    }
+
+    .inputs .text-input {
+      margin-top: 1rem;
+
+      &:first-child {
+        margin-top: 2rem;
       }
     }
 
-    /*sets the form and size of all buttons*/
-    .button {
-      background: none;
-      border: 0.067rem solid #0b132b;
-      border-radius: 0.4rem;
-      margin: 0.667rem auto;
-      outline: #0b132b;
-      padding: 0.267rem;
-      width: 70%;
+    .actions {
+      justify-content: space-between;
+      margin-top: 2rem;
+      width: 100%;
     }
 
-    /*sets position of the headline "LOGIN"*/
-    .headline {
-      padding-top: -50%;
-    }
+    .security-area {
+      color: $color-turquoise;
+      justify-content: flex-end;
+      margin-top: 1rem;
+      width: 100%;
 
-    /*sets size and color of the login-button*/
-    .login {
-      background: #5bc0be;
-      border-color: #303030;
-      margin: 0.667rem auto;
-      width: 70%;
-    }
-
-    /*sets the size of the google-icon in the google-login-field*/
-    .google-bild {
-      padding: none;
-      width: 1rem;
-    }
-
-    /*describes the field for the google-login*/
-    .google-login {
-      background: none;
-      border: 0.067rem solid #0b132b;
-      border-radius: 0.667rem;
-      font-family: Medium 5.333rem/8.6rem HindSiliguri-Regular, sans-serif;
-      margin: 0.667rem auto;
-      outline: #0b132b;
-      padding: 0.267rem;
-      width: 70%;
-    }
-
-    /*sets the position of the two eye-icons in the password-field*/
-    .eye {
-      position: absolute;
-      right: 20%;
-    }
-
-    /*icon of the non-slashed eye; sets the passwordvisibility of non-visible*/
-    .hide1 {
-      display: none;
-    }
-
-    /*field that displays the text and all buttons and input-fields of the login*/
-    .boxinhalt {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      padding: 0 5rem;
-    }
-
-    /*sets size and form of the input-boxes for password and email*/
-    .input-box {
-      border: 0.067rem solid #0b132b;
-      border-radius: 0.4rem;
-      margin: 0.667rem auto;
-      outline: none;
-      padding: 0.267rem;
-      position: relative;
-      width: 90%;
-      /*sets size of the actual inputfields in the input-boxes*/
-      input {
-        background: transparent;
-        font-size: 1rem;
-        outline: none;
-        width: 100%;
+      a:visited {
+        color: $color-turquoise;
       }
     }
+  }
 
-    /*sets the form and size of all buttons*/
-    .button,
-    button {
-      background: none;
-      border: 0.067rem solid #0b132b;
-      border-radius: 0.4rem;
-      font-size: 1rem;
-      margin: 0.667rem auto;
-      outline: #0b132b;
-      padding: 0.267rem;
-      width: 70%;
-    }
+  .flex-row-box {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
-    /*sets position of the headline "LOGIN"*/
-    .headline {
-      font-size: 2.5rem;
-      padding-top: -50%;
-    }
-
-    /*sets size and color of the login-button*/
-    .login {
-      background: #5bc0be;
-      border-color: #303030;
-      margin: 0.667rem auto;
-      width: 70%;
-    }
-
-    /*sets the size of the google-icon in the google-login-field*/
-    .google-bild {
-      padding: 0 0.5rem;
-      width: 1rem;
-    }
-
-    /*describes the field for the google-login*/
-    .google-login {
-      background: none;
-      border: 0.067rem solid #0b132b;
-      border-radius: 0.667rem;
-      font-family: Medium 5.333rem/8.6rem HindSiliguri-Regular, sans-serif;
-      margin: 0.667rem auto;
-      outline: #0b132b;
-      padding: 0.267rem;
-      width: 70%;
-    }
-
-    /*sets the position of the two eye-icons in the password-field*/
-    .eye {
-      position: absolute;
-      right: 0.533rem;
-      top: 0;
-    }
-
-    /*icon of the non-slashed eye; sets the passwordvisibility of non-visible*/
-    .hide1 {
-      display: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .pointer {
-      cursor: pointer;
-    }
+  .flex-column-box {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }

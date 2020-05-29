@@ -44,7 +44,7 @@ class Register extends React.Component {
                     <span>{t.t('component.register.label', 'Register')}</span>
                 </div>
                 <div className="register-content">
-                    <div className="first-page flex-column-box">
+                    <div className="flex-column-box">
                         <div className="inputs flex-column-box">
                             <TextInput
                                 placeholder={t.t('component.register.inputs.emailLabel', 'E-Mail')}

@@ -17,7 +17,14 @@
       "privacy": "Privacy Policy"
     },
     "login": {
-      "login": "LOGIN"
+      "forgotPassword": "Forgot password?",
+      "inputs": {
+        "emailLabel": "E-Mail",
+        "passwordLabel": "Password"
+      },
+      "label": "Login",
+      "login": "Login",
+      "stayLoggedIn": "Stay signed in"
     },
     "profileCertificate": {
       "date": "Reached at"

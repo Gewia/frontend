@@ -2,7 +2,7 @@ describe('login and registration test', () => {
     it('should login', () => {
         cy.visit('/')
             .get('.btn-login').click()
-            .url().should('include', '/dashboard');
+            .url().should('include', '/login');
     });
     it('should register', () => {
         cy.visit('/')

@@ -1,106 +1,61 @@
 import React from 'react';
-// import axios from 'axios';
 import './Login.scss';
-import { Eye, EyeOff } from 'react-feather';
+import { observer } from 'mobx-react';
+import { Link } from 'react-router-dom';
+import { t } from '../../i18n/i18n';
+import TextInput from '../Input/TextBox/TextInput';
+import LoginStore from '../../store/LoginStore';
+import Button from '../ui/button/Button';
 
+const loginStore = new LoginStore();
+
+@observer
 class Login extends React.Component {
-    handleEmailChange = (event) => {
-        this.setState({ email: event.target.value });
-    };
-
-    handlePasswortChange = (event) => {
-        this.setState({ password: event.target.value });
-    };
-
-    handleSubmit = (event) => {
-        event.preventDefault();
-        /*
-        const user = { email: this.state.email, password: this.state.password };
-        
-        const response = axios.post(`https://jsonplaceholder.typicode.com/users`, { user }).then(
-            
-            (res) => {
-                 axios.post(`https://user.e-edu.the-morpheus.de/users/login`, {user}).then(res => { 
-            },
-            (onerror) => {}
-        );
-
-        if (response) {
-            this.props.history.push('/dashboard');
-        }
-        */
-    };
-
-    /** Method to switch between visibility and non-visibility
-     * @public
-     */
-    changeVisibility() {
-        /* const passwortType = document.getElementById('password');
-        const hiddenEye = document.getElementById('hide1');
-        const openEye = document.getElementById('hide2');
-
-        if (passwortType.type === 'password') {
-            passwortType.type = 'text';
-            hiddenEye.style.display = 'block';
-            openEye.style.display = 'none';
-        } else {
-            passwortType.type = 'password';
-            hiddenEye.style.display = 'none';
-            openEye.style.display = 'block';
-        } */
-    }
-
-    render() {
+    render(): React.ReactNode {
         return (
-            <div className="login-component">
-                {/* describes the login-popup */}
-                <form className="box" onSubmit={this.handleSubmit} action="loginPop.html" method="post">
-                    <div className="box-content">
-                        <h1 className="headline">L O G I N</h1>
-                        {/* describes the email-input-box */}
-                        <div className="input-box">
-                            <input
-                                type="text"
-                                name="email"
-                                placeholder="Enter Email..."
-                                className="input-field"
-                                required
-                                onChange={this.handleEmailChange}
+            <div className="login">
+                <div className="header">
+                    <span>{t.t('component.login.label', 'Login')}</span>
+                </div>
+                <div className="login-content">
+                    <div className="flex-column-box">
+                        <div className="inputs flex-column-box">
+                            <TextInput
+                                placeholder={t.t('component.login.inputs.emailLabel', 'E-Mail')}
+                                onChange={(value) => loginStore.setEmail(value.target.value)}
+                                className="text-input"
+                                type="email"
+                                style={{ height: '2.69rem', width: '28rem' }}
                             />
-                        </div>
-                        {/* describes the password-input-box */}
-                        <div className="input-box">
-                            <input
+                            <TextInput
+                                placeholder={t.t('component.login.inputs.passwordLabel', 'Password')}
+                                onChange={(value) => loginStore.setPassword(value.target.value)}
+                                className="text-input"
                                 type="password"
-                                name="passwort"
-                                placeholder="Enter Password..."
-                                className="input-field passwort"
-                                required
-                                onChange={this.handlePasswortChange}
+                                style={{ height: '2.69rem', width: '28rem' }}
                             />
-                            {/* describes the two eye-icons in the field */}
-                            <span
-                                className="eye"
-                                style={{ outline: 'none' }}
-                                onClick={this.changeVisibility}
-                                role="button"
-                                tabIndex={0}>
-                                <Eye className="hide1" />
-                                <EyeOff className="hide2" />
-                            </span>
                         </div>
-                        {/* describes the google-login-field */}
-                        <button className="pointer google-login" type="button">
-                            <img
-                                className="google-bild"
-                                src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
-                                alt="log in with google"
+                        <div className="actions flex-row-box">
+                            <div className="checkbox flex-row-box">
+                                <input
+                                    type="checkbox"
+                                    onClick={() => loginStore.setStayLoggedIn(!loginStore.StayLoggedIn)}
+                                />
+                                <span>{t.t('component.login.stayLoggedIn', 'Stay LoggedIn')}</span>
+                            </div>
+                            <Button
+                                name={t.t('component.login.login', 'Login')}
+                                width="13.5rem"
+                                height="2.69rem"
+                                fontSize="22px"
+                                styleType="primary"
                             />
-                            Log In with Google
-                        </button>
-                        <input type="submit" className="login button pointer" value="Log In" />
+                        </div>
+                        <div className="security-area flex-row-box">
+                            <Link to="forgotPassword">{t.t('component.login.forgotPassword', 'Forgot password?')}</Link>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
         );
     }
