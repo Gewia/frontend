@@ -17,7 +17,14 @@
       "privacy": "Datenschutzerklärung"
     },
     "login": {
-      "login": "ANMELDEN"
+      "forgotPassword": "Passwort vergessen?",
+      "inputs": {
+        "emailLabel": "E-Mail",
+        "passwordLabel": "Passwort"
+      },
+      "label": "Login",
+      "login": "Anmelden",
+      "stayLoggedIn": "Angemeldet bleiben"
     },
     "profileCertificate": {
       "date": "Erreicht am"

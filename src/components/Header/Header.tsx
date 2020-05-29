@@ -21,8 +21,7 @@ class Header extends React.Component<HeaderInterface> {
                             </div>
                         </Link>
                         <div className="button-box-landing">
-                            {/* TODO Route zurück auf /login */}
-                            <Link className="btn-log btn-login" to="/dashboard">
+                            <Link className="btn-log btn-login" to="/login">
                                 {t.t('component.login.login', 'LOGIN')}
                             </Link>
                             <Link className="btn-log btn-register" to="/register">
