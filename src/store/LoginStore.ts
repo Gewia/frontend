@@ -3,7 +3,7 @@ import {observable, action} from "mobx";
 class LoginStore {
     @observable email = '';
     @observable password = '';
-    @observable StayLoggedIn = false;
+    @observable stayLoggedIn = false;
     @observable errorText: string = '';
     @observable valid = false;
 
@@ -13,8 +13,8 @@ class LoginStore {
     @action setPassword(value: string) {
         this.password = value;
     }
-    @action setStayLoggedIn(value: boolean) {
-        this.StayLoggedIn = value;
+    @action toggleStayLoggedIn() {
+        this.stayLoggedIn = !this.stayLoggedIn;
     }
     @action setErrorText(value: string) {
         this.errorText = value;

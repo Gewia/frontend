@@ -39,7 +39,7 @@ class Login extends React.Component {
                             <div className="checkbox flex-row-box">
                                 <input
                                     type="checkbox"
-                                    onClick={() => loginStore.setStayLoggedIn(!loginStore.StayLoggedIn)}
+                                    onClick={() => loginStore.toggleStayLoggedIn()}
                                 />
                                 <span>{t.t('component.login.stayLoggedIn', 'Stay LoggedIn')}</span>
                             </div>
