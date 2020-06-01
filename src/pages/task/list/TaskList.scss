@@ -1,0 +1,94 @@
+@import '../../../css/styles';
+
+.result-content-header {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+
+  .result-left {
+    margin-left: 12.667rem;
+
+    .result-subject {
+      color: $color-bluegrey;
+      font-size: 4rem;
+      font-weight: bolder;
+      margin-right: 2.667rem;
+      margin-top: 2.267rem;
+    }
+  }
+
+  .middle {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .result-center {
+      .result-subject {
+        display: flex;
+        font-size: 1.333rem;
+        margin-right: 2.667rem;
+        margin-top: 2.267rem;
+
+        .icon {
+          margin-right: 0.5rem;
+        }
+
+        .points {
+          color: $color-grey;
+        }
+
+      }
+    }
+  }
+
+  .result-right {
+    margin-right: 7.267rem;
+
+    .result-subject {
+      color: $color-bluegrey;
+      font-size: 4rem;
+      font-weight: bolder;
+      margin-right: 2.667rem;
+      margin-top: 2.267rem;
+
+      .input {
+        background: transparent;
+        border: 1px solid $color-grey;
+        border-radius: 8px;
+        color: $color-grey;
+        font-size: 1.333rem;
+        height: 2.867rem;
+        letter-spacing: 0;
+        opacity: 1;
+        text-align: left;
+      }
+
+      .input:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.task-content-list {
+  margin-top: 4rem;
+}
+
+.task-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  .teacher-information {
+    img {
+      border: 0.133rem solid $color-primary;
+      border-radius: 6.667rem;
+      max-height: 7.333rem;
+      max-width: 7.333rem;
+    }
+  }
+}
+
+

@@ -1,0 +1,103 @@
+@import '../../../css/styles';
+
+.subject {
+  border: 1px solid $color-warmGrey;
+  border-radius: 0.8rem;
+  display: flex;
+  height: 10rem;
+  padding-bottom: 0.5rem;
+
+  .image {
+    align-items: center;
+    border: 1px solid $color-primary;
+    border-radius: 3.26rem;
+    display: flex;
+    height: 2.81rem;
+    justify-content: center;
+    margin: 0.5rem 0 0 0.8rem;
+    width: 2.81rem;
+
+    .icon {
+      height: 1.88rem;
+      width: 1.88rem;
+    }
+  }
+
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0.8rem;
+    margin-top: 0.65rem;
+    width: 70%;
+
+    .subject-name {
+      color: $color-bluegrey;
+      font-family: HindSiliguri-Regular, sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    .under-name {
+      color: $color-grey;
+      font-size: 0.8rem;
+      letter-spacing: 0;
+      opacity: 1;
+      text-align: left;
+    }
+
+    .points {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .user-points,
+      .community-points {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+
+        .point-text {
+          margin-left: 0.4rem;
+        }
+
+      }
+
+      span {
+        align-items: center;
+        display: flex;
+        font-size: 13px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+    }
+
+    .weekend-task {
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 0.8rem;
+      margin-top: 1rem;
+
+      span {
+        font-size: 13px;
+        font-weight: 500;
+        margin-left: 0.62rem;
+        white-space: nowrap;
+      }
+
+      .calender {
+        height: 1.8rem;
+        width: 1.8rem;
+      }
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

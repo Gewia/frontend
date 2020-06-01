@@ -1,0 +1,139 @@
+@import '../../../css/styles';
+
+.evaluation {
+  font-family: HindSiliguri-Regular, sans-serif;
+
+  .evaluation-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .task-header {
+      margin-bottom: 2.5rem;
+      width: 90%;
+    }
+
+    .evaluation-content-header {
+      align-items: baseline;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      .evaluation-left {
+        margin-left: 7.267rem;
+        margin-top: 2.267rem;
+
+
+        .evaluation-subject {
+          color: $color-bluegrey;
+          font-family: HindSiliguri-Regular, sans-serif;
+          font-size: 4rem;
+          font-weight: bolder;
+          margin-right: 2.667rem;
+          margin-top: 2.267rem;
+
+        }
+
+        .evaluation-module {
+          color: $color-grey;
+          font-size: 2.133rem;
+          font-weight: bolder;
+        }
+      }
+
+      .evaluation-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 16.533rem;
+
+        img {
+          height: 1.333rem;
+          margin-right: 0.4rem;
+          width: 1.333rem;
+        }
+
+        .evaluation-points {
+          align-items: center;
+          color: $color-grey;
+          display: flex;
+          flex-direction: row;
+          font-size: 1rem;
+          font-weight: bolder;
+
+          &:first-child {
+            margin-right: 1.733rem;
+          }
+
+          p {
+            margin: 0.667rem 0;
+          }
+        }
+      }
+    }
+
+    .result-evaluation {
+      align-items: baseline;
+      color: $color-grey;
+      display: flex;
+      flex-direction: row;
+      font-size: 2.667rem;
+      font-weight: normal;
+      justify-content: space-between;
+      width: 60rem;
+
+      p {
+        color: $color-grey;
+        font-size: 2.133rem;
+        margin: 0;
+
+        span {
+          color: $color-grey;
+          font-size: 2.667rem;
+        }
+      }
+    }
+
+    .evaluation-pointcount {
+      align-items: baseline;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 2rem;
+      width: 60rem;
+
+      .evaluation-new-points {
+        color: $color-dark !important;
+        font-size: 4rem;
+        font-weight: bold;
+
+      }
+
+      .evaluation-weekly-points {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {
+          color: $color-grey;
+          font-size: 2rem;
+          font-weight: normal;
+
+          span {
+            font-size: 2.667rem;
+          }
+        }
+      }
+    }
+
+    .evaluation-questions {
+      width: 60rem;
+
+      .evaluation-question {
+        margin: 0.667rem 0;
+      }
+    }
+  }
+}

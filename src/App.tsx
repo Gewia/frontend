@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
-import LandingPage from './pages/Landing/LandingPage';
-import Dashboard from './pages/Dashboard/Dashboard';
-import Credits from './pages/Credits/Credits';
-import TaskEvaluation from './pages/Result/TaskEvaluation';
-import Settings from './pages/Settings/Settings';
-import TaskList from './pages/TaskList/TaskList';
-import Lecture from './pages/Lecture/Lecture';
-import PageLayout from './components/Template/page/PageLayout';
-import AddTask from './pages/AddTask/AddTask';
-import SubjectTask from './pages/SubjectTask/SubjectTask';
-import ErrorPage from './pages/ErrorPage/ErrorPage';
-import ValidateEmail from './pages/ValidateEmail/ValidateEmail';
+import LandingPage from './pages/landing/LandingPage';
+import Dashboard from './pages/dashboard/Dashboard';
+import Credits from './pages/credits/Credits';
+import TaskEvaluation from './pages/task/evaluation/TaskEvaluation';
+import Settings from './pages/settings/Settings';
+import TaskList from './pages/task/list/TaskList';
+import Lecture from './pages/task/lecture/Lecture';
+import PageLayout from './templates/page/PageLayout';
+import AddTask from './pages/task/add/AddTask';
+import SubjectTask from './pages/task/subject/SubjectTask';
+import ErrorPage from './pages/errorPage/ErrorPage';
+import ValidateEmail from './pages/validateEmail/ValidateEmail';
 
 class App extends Component {
     render() {
