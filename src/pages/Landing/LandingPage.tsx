@@ -40,7 +40,9 @@ class LandingPage extends React.Component {
                         <Modal
                             visible
                             closemodal={() => {
-                                // TODO redirect to '/'
+                                // TODO: Fix this
+                                // @ts-ignore
+                                this.props.history.push('/');
                             }}
                             type="fadeIn">
                             <Route exact path="/login" component={Login} />
