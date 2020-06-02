@@ -12,6 +12,9 @@ import { version } from '../../../package.json';
 
 const settingsStore = new SettingsStore();
 
+declare let COMMITHASH: string;
+declare let DATE: string;
+
 @observer
 class Settings extends Component {
     languages = {
@@ -163,11 +166,11 @@ class Settings extends Component {
                         </div>
                         <div className="flex-row-box">
                             <p>{t.t('page.settings.git.hash', 'Hash:')}</p>
-                            <p style={{ marginLeft: '0.4rem' }}>{process.env.REACT_APP_GIT_SHA}</p>
+                            <p style={{ marginLeft: '0.4rem' }}>{COMMITHASH}</p>
                         </div>
                         <div className="flex-row-box">
                             <p>{t.t('page.settings.git.date', 'Date:')}</p>
-                            <p style={{ marginLeft: '0.4rem' }}>{process.env.REACT_APP_GIT_DATE}</p>
+                            <p style={{ marginLeft: '0.4rem' }}>{DATE}</p>
                         </div>
                     </div>
                     <div className="actions flex-row-box">
