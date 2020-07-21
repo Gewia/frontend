@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@apollo/react-hooks": "3.1.5",
-    "@sentry/browser": "5.17.0",
+    "@sentry/browser": "5.20.0",
     "apollo-boost": "0.4.9",
     "axios": "0.19.2",
     "graphql": "15.1.0",
@@ -62,7 +62,7 @@
   "devDependencies": {
     "@apollo/react-hooks": "3.1.5",
     "@babel/preset-react": "7.10.1",
-    "@sentry/browser": "5.17.0",
+    "@sentry/browser": "5.20.0",
     "@storybook/addon-actions": "5.3.19",
     "@storybook/addon-knobs": "5.3.19",
     "@storybook/addon-links": "5.3.19",
