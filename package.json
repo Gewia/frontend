@@ -22,7 +22,7 @@
     "react-i18next": "11.6.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
-    "stylelint-scss": "3.18.0"
+    "stylelint-scss": "3.19.0"
   },
   "scripts": {
     "start": "REACT_APP_GIT_SHA=`git rev-parse --short HEAD` REACT_APP_GIT_DATE=`git log -1 --format=%cd` react-scripts start",
