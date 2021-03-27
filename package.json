@@ -115,7 +115,7 @@
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "4.0.4",
-    "i18next-scanner": "2.11.0",
+    "i18next-scanner": "3.0.0",
     "mobx-devtools-mst": "0.9.22",
     "mobx-state-tree": "3.16.0",
     "postcss-loader": "3.0.0",
