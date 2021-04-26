@@ -65,7 +65,7 @@
     "@sentry/browser": "5.17.0",
     "@storybook/addon-actions": "5.3.19",
     "@storybook/addon-knobs": "5.3.19",
-    "@storybook/addon-links": "5.3.19",
+    "@storybook/addon-links": "6.2.9",
     "@storybook/addons": "5.3.19",
     "@storybook/preset-create-react-app": "3.1.2",
     "@storybook/react": "5.3.19",
