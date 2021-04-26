@@ -107,7 +107,7 @@
     "cypress": "4.8.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
-    "eslint-config-prettier": "6.11.0",
+    "eslint-config-prettier": "8.3.0",
     "eslint-plugin-chai-friendly": "0.6.0",
     "eslint-plugin-cypress": "2.11.1",
     "eslint-plugin-import": "2.21.2",
