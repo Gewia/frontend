@@ -125,7 +125,7 @@
     "style-loader": "1.2.1",
     "stylelint": "13.6.1",
     "stylelint-config-sass-guidelines": "7.0.0",
-    "stylelint-config-standard": "20.0.0",
+    "stylelint-config-standard": "22.0.0",
     "tslint": "6.1.2",
     "typescript": "3.9.5"
   }
